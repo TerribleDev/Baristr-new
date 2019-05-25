@@ -15,6 +15,9 @@ const styles = {
     grow: {
       flexGrow: 1,
     },
+    appBar: {
+      height: '7vh'
+    },
     menuButton: {
       marginLeft: "-.8em",
       marginRight: "1em",
@@ -26,7 +29,7 @@ const styles = {
     const { classes } = props;
     return (
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <IconButton onClick={() => setOpenDraw(true)} className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />

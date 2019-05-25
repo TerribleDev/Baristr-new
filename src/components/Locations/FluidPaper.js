@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, withStyles, Card } from "@material-ui/core";
+import { withStyles, Card } from "@material-ui/core";
 
 function FluidPaper({ children, classes }) {
   return <Card className={classes.paper}>{children}</Card>;

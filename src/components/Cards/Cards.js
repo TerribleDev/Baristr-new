@@ -38,18 +38,19 @@ function RenderAllCards({ cards, classes }) {
 const RenderAllCardsWithStyle = withStyles({
   cardContainer: {
     display: "flex",
-    justifyContent: "center",
-    paddingTop: "1rem"
+    flexWrap: 'wrap',
+    padding: "1rem",
+    height: '100%'
   },
   card: { 
       width: "15rem",
-      marginRight: ".3rem",
-      marginLeft: ".3rem",
+      margin: '2%',
     },
     cardDesc: {
         height: "5rem",
         textOverflow: "ellipsis",
-        overflow: "auto"
+        overflow: "auto",
+        marginBottom: '1.5em'
     }
 
 })(RenderAllCards);

@@ -8,4 +8,6 @@ function AppBody ({ classes, children}) {
         </div>
     )
 }
-export default withStyles({ backgroundColor: 'white'})(AppBody)
+export default withStyles({ appBody : {
+    minHeight: '93vh'
+}})(AppBody)
